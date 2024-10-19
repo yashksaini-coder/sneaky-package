@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Installation Guide - Sneaky Package Documentation</title>
+        <title>Contributing Guidelines - Sneaky Package Documentation</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,15 +80,15 @@
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./"
-                    class=" active 
+                <a href="../installation/"
+                    class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Installation Guide
                 </a>
             </li>
             <li class="drac-box">
-                <a href="../contributing/"
-                    class="
+                <a href="./"
+                    class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Contributing Guidelines
                 </a>
@@ -121,14 +121,14 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../usage/"
+                    <a href="../installation/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../contributing/"
-                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -200,59 +200,113 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><p>Here is a complete installation guide for the <code>sneaky-package</code> repository:</p>
-<h2 id="installation-guide">Installation Guide</h2>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li>Ensure you have Python installed (version 3.6 or above).</li>
-<li>Ensure you have <code>pip</code> installed.</li>
-</ul>
-<h3 id="installation-steps">Installation Steps</h3>
+        <p><h1 id="contribution-guidelines-for-sneaky-package">Contribution Guidelines for Sneaky Package</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Thank you for your interest in contributing to <strong>Sneaky Package!</strong> This project is nothing more than a lightweight &amp; faster Python package that aims to highlight and improve security by demonstrating potential vulnerabilities in the system when connected with pip. Your contributions—whether they be code, documentation, or feedback—help foster a collaborative environment and drive innovation in our project.</p>
+<p>Please follow the guidelines below to ensure a smooth contribution process.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>To contribute to the Sneaky Package, follow these steps to set up your development environment:</p>
 <ol>
 <li>
-<p><strong>Clone the Repository</strong>
+<p>Fork this repository to your GitHub account by clicking the "Fork" button in the top right.</p>
+</li>
+<li>
+<p><strong>Clone the Repository</strong>:
+   Open your terminal and run:
    <code>bash
-   git clone https://github.com/yashksaini-coder/sneaky-package.git
+   git clone https://github.com/YOUR-USERNAME/sneaky-package
    cd sneaky-package</code></p>
 </li>
 <li>
-<p><strong>Install the Package</strong>
-   <code>bash
-   pip install .</code></p>
+<p><strong>Install Prerequisites</strong>:
+   Ensure you have the following installed:</p>
+</li>
+<li>Python 3.x</li>
+<li>
+<p>pip (Python package installer)</p>
 </li>
 <li>
-<p><strong>Verify the Installation</strong>
+<p><strong>Install the package:</strong>
+   Open your terminal and run:
    <code>bash
-   python -c "import sneaky_package; print('Sneaky Package installed successfully!')"</code></p>
+   pip install matplotlib_visual</code>  </p>
 </li>
 </ol>
-<h3 id="additional-steps">Additional Steps</h3>
-<ul>
-<li>If you encounter any issues during installation, ensure all dependencies in <code>requirements.txt</code> are installed:
+<p>Create a file or open Python in the terminal and enter the following code:
    <code>bash
-   pip install -r requirements.txt</code></li>
+   from matplotlib_visual.display import featureName  
+   featureName("fileName", 1234) # password integer</code>  </p>
+<pre><code>  - `display` - A method that contains features  
+  - `featureName` - Check out `display.py` in the repo and use the required method name (feature).
+</code></pre>
+<h2 id="understanding-the-codebase">Understanding the Codebase</h2>
+<p>Before contributing, take time to familiarize yourself with the structure of the project by reading the <a href="https://github.com/AmateursLeague/sneaky-package/blob/main/README.md">README</a> file. 
+   - This project is <strong>beginner-friendly</strong> with most features implemented in <strong>minimal lines of code</strong>.
+   - Codebase is compact, lightweight and faster.<br />
+   - Research thoroughly to understand how to implement stealthy features.
+   - Review comments and docstrings within the code to grasp how each component works.</p>
+<h2 id="how-to-contribute">How to Contribute</h2>
+<p>Follow these steps to make your contributions:</p>
+<h3 id="step-1-identify-an-issue">Step 1: Identify an Issue</h3>
+<p>First, check for any <a href="https://github.com/AmateursLeague/sneaky-package/issues">existing issues</a> in the repository. If you want to report a new issue, please make sure to follow the <strong>Issue Template</strong> provided below:</p>
+<ul>
+<li><strong>Issue Template:</strong><ul>
+<li><strong>Issue Title:</strong> A concise and descriptive title.</li>
+<li><strong>Description:</strong> Clear and detailed description of the issue or feature request.</li>
+<li><strong>Steps to Reproduce (if applicable):</strong> Detailed steps to reproduce the issue.</li>
+<li><strong>Expected Behavior:</strong> What you expected to happen.</li>
+<li><strong>Actual Behavior:</strong> What actually happened.</li>
 </ul>
-<h3 id="running-the-package">Running the Package</h3>
-<p>To run the package, follow these steps:</p>
+</li>
+</ul>
+<p>If the issue already exists or you're interested in fixing something, feel free to pick it up.</p>
+<h3 id="step-2-fork-the-repository">Step 2: Fork the Repository</h3>
+<p>Click on the "<em>Fork</em>" button at the top right of the repository page to create your copy.</p>
+<h3 id="step-3-create-a-branch">Step 3: Create a Branch</h3>
+<p>After cloning your forked repository, create a new branch for your changes:
+   <code>bash
+   git checkout -b feature/your-feature-name</code></p>
+<h3 id="step-4-make-changes">Step 4: Make Changes</h3>
+<p>Implement your changes adhering to coding standards and best practices outlined in this project.</p>
+<h3 id="step-5-testing">Step 5: Testing</h3>
+<p>Write tests for any new features or bug fixes you implement. Ensure all tests pass before submitting your contribution.</p>
+<h2 id="submitting-contributions">Submitting Contributions</h2>
+<p>To submit your changes:</p>
 <ol>
 <li>
-<p><strong>Basic Usage</strong>
-   <code>python
-   from sneaky_package import main_function
-   main_function()</code></p>
+<p>Commit your changes with a clear message:
+   <code>bash
+   git commit -m "Description of changes made"</code></p>
 </li>
 <li>
-<p><strong>Command Line Interface</strong>
+<p>Push your branch to your forked repository:
    <code>bash
-   sneaky-package --help</code></p>
+   git push origin feature/your-feature-name</code></p>
+</li>
+<li>
+<p>Go to the original repository and click "<em>Compare &amp; Pull Request</em>". When submitting the PR, please follow this <strong>PR Format:</strong></p>
+</li>
+<li>
+<p><strong>Pull Request Template:</strong></p>
+<ul>
+<li><strong>Title:</strong> Short and descriptive title for your pull request.</li>
+<li><strong>Description:</strong> Detailed description of what changes you made and why.</li>
+<li><strong>Issue Reference:</strong> Mention the issue number this PR addresses (if applicable).</li>
+</ul>
 </li>
 </ol>
-<h3 id="troubleshooting">Troubleshooting</h3>
+<p><strong>4. Code Review &amp; Feedback:</strong>
+The project maintainers will review your pull request. You may be asked to make some changes before your PR can be merged. Please respond to the feedback and make the necessary adjustments.</p>
+<p>If you have any questions or doubts during the review process, feel free to ask.</p>
+<h2 id="reporting-issues">Reporting Issues</h2>
+<p>If you encounter bugs or have feature suggestions:</p>
 <ul>
-<li>If you face issues related to permissions, try running the commands with <code>sudo</code>.</li>
-<li>For detailed debugging, refer to the logs located in the <code>logs/</code> directory.</li>
+<li>Report them by creating a new issue in the GitHub repository.</li>
+<li>Provide clear and concise descriptions, including steps to reproduce bugs or use cases for feature requests.</li>
 </ul>
-<p>For more detailed information, refer to the current <a href="https://github.com/yashksaini-coder/sneaky-package/blob/main/README.md">README.md</a>.</p></p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>We appreciate all contributions! If you have any doubts or need clarification at any point, please feel free to reach out by creating an issue or asking a question in the PR comments.</p>
+<h2 id="happy-coding">Happy coding!</h2></p>
     </article>
 </section>
             <!-- endblock -->
