@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Getting Started - Sneaky Package</title>
+        <title>Changelog - Sneaky Package</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                                 <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Getting Started</a>
+                                <a href="../usage/" class="nav-link">Getting Started</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../installation/" class="nav-link">Installation Guide</a>
@@ -47,7 +47,7 @@
                                 <a href="../contributing/" class="nav-link">Contributing Guidelines</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../CHANGELOG/" class="nav-link">Changelog</a>
+                                <a href="./" class="nav-link active" aria-current="page">Changelog</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../LICENSE/" class="nav-link">License</a>
@@ -61,17 +61,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../contributing/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../installation/" class="nav-link">
+                                <a rel="next" href="../LICENSE/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/AmateursLeague/sneaky-package/edit/master/docs/usage.md" class="nav-link">Edit on AmateursLeague/sneaky-package
+                                <a href="https://github.com/AmateursLeague/sneaky-package/edit/master/docs/CHANGELOG.md" class="nav-link">Edit on AmateursLeague/sneaky-package
                                     </a>
                             </li>
                     </ul>
@@ -92,13 +92,40 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#getting-started" class="nav-link">Getting Started</a>
+            <li class="nav-item" data-bs-level="1"><a href="#changelog" class="nav-link">Changelog</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#unreleased" class="nav-link">[Unreleased]</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="2"><a href="#licence" class="nav-link">Licence</a>
+            <li class="nav-item" data-bs-level="2"><a href="#v01-2024-02-04" class="nav-link">[v0.1] - 2024-02-04</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pre-release" class="nav-link">[Pre-release]</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#v02-2024-02-04" class="nav-link">[v0.2] - 2024-02-04</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stable-release" class="nav-link">[Stable-Release]</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#v071-2024-03-29" class="nav-link">[v0.7.1] - 2024-03-29</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stable-release_1" class="nav-link">[Stable-Release]</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#091-2024-04-08" class="nav-link">[0.9.1] - 2024-04-08</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -106,39 +133,57 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="installation">Installation</h3>
-<p>To install the Sneaky Package, run the following command in your terminal:
-<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">matplotlib</span><span class="o">-</span><span class="n">visual</span>
-</code></pre></div></p>
-<blockquote>
-<p><strong>Note:</strong> The <code>matplotlib-visual</code> package has been implemented by <a href="https://github.com/this-is-yaash">Project Manager</a> and has details specific to him, you are suggested to follow the steps above and fork the repository and upload a package.</p>
-</blockquote>
-<h3 id="basic-usage">Basic Usage</h3>
-<p>After installation, you can use the Sneaky Package in your Python scripts or interactively in a Python shell. Here's a simple example:
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">matplotlib_visual.show</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="n">display</span><span class="p">(</span><span class="s2">&quot;&lt;filename-without-extension&gt;&quot;</span><span class="p">)</span>
-</code></pre></div>
-This will display the source code of the specified file in the console.</p>
-<h3 id="advanced-features">Advanced Features</h3>
-<p>The Sneaky Package offers more advanced features, such as:
-- <strong>Stealth Copy to Clipboard</strong>: Copies the source code to the system's clipboard for a more secure method.
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">matplotlib_visual.clip</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="n">display</span><span class="p">(</span><span class="s2">&quot;&lt;filename-without-extension&gt;&quot;</span><span class="p">)</span>
-</code></pre></div>
-- <strong>Writing the source code</strong>: Writes the file in the root directory of execution.
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">matplotlib_visual.write</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="n">display</span><span class="p">(</span><span class="s2">&quot;&lt;filename-without-extension&gt;&quot;</span><span class="p">)</span>
-</code></pre></div>
-- <strong>Web Scraping</strong>: Retrieves the clipboard's text content from a specified URL and displays it in the system console.
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">package_name.clp</span> <span class="kn">import</span> <span class="n">grab</span>
-<span class="n">grab</span><span class="p">(</span><span class="s1">&#39;url-name&#39;</span><span class="p">)</span>
-</code></pre></div></p>
-<h2 id="licence">Licence</h2>
-<p>The project works by highlighting and improving security measure by demonstrating potential vulnerabilities when the system connected with pip.
-It is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL 3.0</a>, allowing you to sneakily use and modify it as needed.</p>
-<hr />
-<p><strong>Happy sneaking!</strong> 🤫</p></div>
+<h1 id="changelog">Changelog</h1>
+<h2 id="unreleased">[Unreleased]</h2>
+<h2 id="v01-2024-02-04">[v0.1] - 2024-02-04</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Uploaded testing source data.</li>
+<li>Implemented discreet source code display.</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>No fixes were required for the initial release.</li>
+</ul>
+<h2 id="pre-release">[Pre-release]</h2>
+<h2 id="v02-2024-02-04">[v0.2] - 2024-02-04</h2>
+<h3 id="added_1">Added</h3>
+<ul>
+<li>Introduces additional source code to PyPI.</li>
+</ul>
+<h3 id="fixes_1">Fixes</h3>
+<ul>
+<li>Enhances ease of implementation.</li>
+</ul>
+<h3 id="changes">Changes</h3>
+<ul>
+<li>Renamed import from <code>lib</code> to <code>display</code>.</li>
+</ul>
+<h2 id="stable-release">[Stable-Release]</h2>
+<h2 id="v071-2024-03-29">[v0.7.1] - 2024-03-29</h2>
+<h3 id="added_2">Added</h3>
+<ul>
+<li>Browser Code</li>
+<li>All subject code</li>
+</ul>
+<h3 id="fixes_2">Fixes</h3>
+<ul>
+<li>Integrated functioning code snippets</li>
+</ul>
+<h3 id="changes_1">Changes</h3>
+<ul>
+<li>New package added for testing <code>graph</code>.</li>
+</ul>
+<h2 id="stable-release_1">[Stable-Release]</h2>
+<h2 id="091-2024-04-08">[0.9.1] - 2024-04-08</h2>
+<h3 id="added_3">Added</h3>
+<ul>
+<li>Clipboard feature (src code will copied into os clipboard)</li>
+</ul>
+<h3 id="fixes_3">Fixes</h3>
+<ul>
+<li>Bug Fixes for the clipboard feature</li>
+</ul></div>
             </div>
         </div>
 
